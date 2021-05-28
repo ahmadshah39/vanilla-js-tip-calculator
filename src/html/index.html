@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div class="flex justify-center items-center h-screen bg-green-200">
+      <div class="w-11/12 sm:w-3/4 md:w-1/2 lg:w-1/3">
+        <div class="bg-white p-3 mb-2 rounded-lg shadow results">
+          <h1 class="text-2xl md:text-4xl py-2 text-green-400 text-center">
+            Results
+          </h1>
+          <div
+            class="
+              flex
+              justify-between
+              items-center
+              flex-wrap
+              text-xl
+              font-bold
+              text-gray-500
+            "
+          >
+            <p>Tip amount:</p>
+            <span class="right" id="tip">0</span>
+          </div>
+          <div
+            class="
+              flex
+              justify-between
+              items-center
+              flex-wrap
+              text-xl
+              font-bold
+              text-gray-500
+            "
+          >
+            <p>Total amount:</p>
+            <span class="right" id="total">0</span>
+          </div>
+          <div
+            class="
+              flex
+              justify-between
+              items-center
+              flex-wrap
+              text-xl
+              font-bold
+              text-gray-500
+            "
+          >
+            <p>Each person owes:</p>
+            <span id="owes">0</span>
+          </div>
+        </div>
+        <div class="bg-white p-5 rounded-lg shadow">
+          <h1 class="text-2xl sm:text-4xl py-3 text-green-400 text-center">
+            TIP CALCULATOR
+          </h1>
+          <form class="py-2 tipForm">
+            <div class="flex-col pb-2 items-center">
+              <label class="block pb-2 text-gray-600 text-xl" for="bill"
+                >Bill Amount</label
+              >
+              <input
+                required
+                class="
+                  w-full
+                  px-2
+                  border border-gray-300
+                  h-10
+                  rounded
+                  outline-none
+                  focus:ring-2 focus:ring-green-400
+                  text-gray-400
+                "
+                placeholder="Bill Amount..."
+                type="number"
+                name="bill"
+                id="bill"
+              />
+            </div>
+            <div class="flex-col pb-2 items-center">
+              <label class="block pb-2 text-gray-600 text-xl" for="sharing"
+                >No. People Sharing...</label
+              >
+              <input
+                required
+                class="
+                  w-full
+                  px-2
+                  border border-gray-300
+                  h-10
+                  rounded
+                  outline-none
+                  focus:ring-2 focus:ring-green-400
+                  text-gray-400
+                "
+                placeholder="No. People Sharing..."
+                type="number"
+                name="sharing"
+                id="sharing"
+              />
+            </div>
+            <div class="flex-col pb-2 items-center">
+              <label class="block pb-2 text-gray-600 text-xl" for="percentage"
+                >Tip percentage</label
+              >
+              <input
+                required
+                class="
+                  w-full
+                  px-2
+                  border border-gray-300
+                  h-10
+                  rounded
+                  outline-none
+                  focus:ring-2 focus:ring-green-400
+                  text-gray-400
+                "
+                placeholder="Tip Percentage..."
+                type="number"
+                name="percentage"
+                id="percentage"
+              />
+            </div>
+            <input
+              type="submit"
+              value="Calculate"
+              class="
+                bg-green-400
+                hover:bg-green-500
+                px-4
+                py-2
+                w-full
+                text-white
+                rounded
+                text-lg
+                focus:outline-none
+                focus:ring-2 focus:ring-offset-2 focus:ring-green-400
+              "
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
